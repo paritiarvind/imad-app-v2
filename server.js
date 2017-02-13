@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/Article1', function (req, res){
-  res.send('pehla page khul gya'); 
+ res.sendFile(path.join(__dirname, 'ui', 'Article1.html'));
 });
 app.get('/Article2', function (req, res){
   res.send('dusra page khul gya');  
