@@ -5,11 +5,71 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var Article1={
+    title:'Article1',
+    heading:'Article1',
+    date:'Feb 15,2017',
+    content:` <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>"`
+            
+    
+};
+function createTemplate (data) {
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+var htmlTemplate=`
+        <html>
+        <head>
+            <title>
+               ${title}
+            </title>
+            <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+              <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div class="container">
+            <div>
+                <a href="https://cloud.imad.hasura.io"></a>
+                     </div>
+            <hr/>
+            <h2>
+                ${heading}
+            </h2>
+            <div>
+                ${date}
+            </div >
+                  <div>
+                   ${content}
+                  </div>
+        
+            </div>
+            
+        </body>
+        </html>`
+        ;
+        return htmTemplate;
+}
+
+
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/Article1', function (req, res){
- res.sendFile(path.join(__dirname, 'ui', 'Article1.html'));
+ res.send(createTemplate(Article1));
 });
 app.get('/Article2', function (req, res){
    res.sendFile(path.join(__dirname, 'ui', 'Article2.html'));
