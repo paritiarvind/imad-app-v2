@@ -15,6 +15,6 @@ button.onclick=function()
             }
         }
 };
-request.open('GET',"http://arvind.imad.hasura-app.io/counter", true);
+request.open('GET',"http://paritiarvind.imad.hasura-app.io/counter", true);
 request.send(null);
 };
