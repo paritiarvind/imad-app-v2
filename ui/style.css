@@ -1,34 +1,4 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 60px;
-}
 
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-.container{
-       max-width:800px;
-       margin:0 auto;
-       color:black;
-       font-family:sans-serif;
-       padding-left:20px;
-       padding-right:20px;
-       background-color:lightgrey;
-       
-   }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
