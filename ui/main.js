@@ -1,4 +1,5 @@
 //counter code
+window.onload = function(){ 
 var button=document.getElementById('counter');
 
 button.onclick=function()
@@ -32,4 +33,5 @@ submit.onclick=function(){
     var ul=document.getElementById('namelist');
     ul.innerHTML=list;
     
+};
 };
