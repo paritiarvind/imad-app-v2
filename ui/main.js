@@ -1,6 +1,6 @@
  function init() {
    
-    document.body.style.backgroundImage = "url('http://www.hdbloggers.net/wp-content/uploads/2016/11/Dark-Wallpaper-Background.jpg')";
+    document.body.style.backgroundImage = "url('http://hd-wall-papers.com/images/wallpapers/background-images-for-websites/background-images-for-websites-10.jpg')";
     document.body.style.backgroundRepeat = "repeat-n"; 
      }
  function w3_open() {document.getElementById("mySidenav").style.display = "block"; }
