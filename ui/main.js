@@ -1,6 +1,6 @@
  function init() {
    
-    document.body.style.backgroundImage = "url('http://hd-wall-papers.com/images/wallpapers/background-images-for-websites/background-images-for-websites-10.jpg')";
+    document.body.style.backgroundImage = "url('http://www.guoguiyan.com/data/out/210/68673984-walls-wallpapers.jpg')";
     document.body.style.backgroundRepeat = "repeat-n"; 
      }
  function w3_open() {document.getElementById("mySidenav").style.display = "block"; }
