@@ -65,7 +65,7 @@ function createTemplate (data) {
                         <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
                         
                          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                         <link rel="stylesheet" type='text/css' href='https://cloud.imad.hasura.io/code/files/ui%2Fstyle.css'>
+                         <link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
                         
                     </head>
                     <body>
@@ -92,7 +92,8 @@ function createTemplate (data) {
                               <div>
                                ${content}
                               </div>
-                    
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                         </div>
                         
                     </body>
