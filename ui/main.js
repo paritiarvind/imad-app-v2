@@ -14,11 +14,5 @@ function w3_close() {
   document.getElementById("mySidenav").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
-document.addEventListener('DOMContentLoaded', function () {
-  particleground(document.getElementById('particles'), {
-    dotColor: 'green',
-    lineColor: 'blue'
-  });
-}, false);
-
-      
+function init(){(document.getElementById('particles');
+}
