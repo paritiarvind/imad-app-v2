@@ -77,7 +77,7 @@ function createTemplate (data) {
                       <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
                       <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
                     </nav>
-          </header> 
+          </header>  
                         <div class="container">
                         <div>
                             <a href="https://cloud.imad.hasura.io"></a>
