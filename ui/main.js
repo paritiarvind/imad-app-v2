@@ -14,5 +14,9 @@ function w3_close() {
   document.getElementById("mySidenav").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
-function init(){(document.getElementById('particles');
-}
+$(document).ready(function() {
+  $('#particles').particleground({
+    dotColor: '#5cbdaa',
+    lineColor: '#5cbdaa'
+  });
+});
