@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     dotColor: 'green',
     lineColor: 'blue'
   });
-  var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 }, false);
 
       
