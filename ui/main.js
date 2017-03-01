@@ -1,8 +1,8 @@
- function init() {
+//  function init() {
    
-    document.body.style.backgroundImage = "url('http:http://wallpapercave.com/wp/UoQbFHi.jpg')";
-    document.body.style.backgroundRepeat = "repeat-n"; 
-     }
+//     document.body.style.backgroundImage = "url('http:http://wallpapercave.com/wp/UoQbFHi.jpg')";
+//     document.body.style.backgroundRepeat = "repeat-n"; 
+//      }
 function w3_open() {
   document.getElementById("main").style.marginLeft = "25%";
   document.getElementById("mySidenav").style.width = "25%";
