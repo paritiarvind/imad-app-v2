@@ -96,7 +96,7 @@ function createTemplate (data) {
                               <div>
                                ${content}
                               </div>
-                              <script src="https://cloud.imad.hasura.io/code/files/ui%2Fmain.js"></script>
+                              <script src="ui/main.js"></script>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                         </div>
