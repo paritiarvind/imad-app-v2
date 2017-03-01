@@ -69,7 +69,7 @@ function createTemplate (data) {
                         
                     </head>
                     <body>
-                     <header>
+                  <header>
            <nav class="w3-sidenav w3-collapse w3-white" style="width:200px" id="mySidenav">
                       <a  href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a> 
                       <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
@@ -77,7 +77,11 @@ function createTemplate (data) {
                       <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
                       <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
                     </nav>
-          </header>  
+          </header>          
+                    <div class="w3-main" style="margin-left:200px" id="main">
+                     <span class="w3-opennav w3-hide-large" onclick="w3_open()" id="opennav">&#9776;</span>
+                      
+                    </div>
                         <div class="container">
                         <div>
                             <a href="https://cloud.imad.hasura.io"></a>
