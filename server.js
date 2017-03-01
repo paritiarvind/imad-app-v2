@@ -63,12 +63,21 @@ function createTemplate (data) {
                            ${title}
                         </title>
                         <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
-                        //   <link href="/ui/style.css" rel="stylesheet" />
+                        
                          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                          <link rel="stylesheet" type='text/css' href='https://cloud.imad.hasura.io/code/files/ui%2Fstyle.css'>
                         
                     </head>
                     <body>
+                     <header>
+           <nav class="w3-sidenav w3-collapse w3-white" style="width:200px" id="mySidenav">
+                      <a  href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a> 
+                      <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
+                      <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
+                      <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
+                      <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
+                    </nav>
+          </header> 
                         <div class="container">
                         <div>
                             <a href="https://cloud.imad.hasura.io"></a>
