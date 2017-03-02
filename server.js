@@ -99,6 +99,14 @@ function createTemplate (data) {
                               <div>
                                ${content}
                               </div>
+                              <script>
+                                function w3_open() {
+                                    document.getElementById("mySidenav").style.display = "block";
+                                }
+                                function w3_close() {
+                                    document.getElementById("mySidenav").style.display = "none";
+                                }
+                                </script>
                               <script src="ui/main.js"></script>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
