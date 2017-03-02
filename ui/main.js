@@ -9,7 +9,7 @@ function w3_close() {
   document.getElementById("mySidenav").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
-}
+
 $(document).ready(function ()
 {
 	$('#particles').particleground(
