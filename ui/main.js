@@ -1,7 +1,7 @@
 function init()
 {
 
-	document.body.style.backgroundImage = "url('http:http://wallpapercave.com/wp/UoQbFHi.jpg')";
+	document.body.style.backgroundImage = "url('http://more-sky.com/data/out/10/IMG_420313.png')";
 	document.body.style.backgroundRepeat = "repeat-n";
 }
 
