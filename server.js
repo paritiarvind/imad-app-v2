@@ -63,6 +63,7 @@ function createTemplate (data) {
                         <title >
                            ${title}
                         </title>
+                        </div>
                         <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
                         
                          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -89,6 +90,7 @@ function createTemplate (data) {
                         <div>
                             <a href="https://cloud.imad.hasura.io"></a>
                                  </div>
+                                 <div class="container" align="center">
                         <hr/>
                         <h2>
                             ${heading}
@@ -96,6 +98,7 @@ function createTemplate (data) {
                         <div>
                             ${date}
                         </div >
+                            </div>
                               <div>
                                ${content}
                               </div>
