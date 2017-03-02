@@ -59,7 +59,8 @@ function createTemplate (data) {
     var htmlTemplate=`
                     <html>
                     <head>
-                        <title align='center'>
+                     <div class="container" align="center">
+                        <title >
                            ${title}
                         </title>
                         <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
