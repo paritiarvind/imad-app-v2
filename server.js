@@ -71,7 +71,7 @@ function createTemplate (data) {
                         
                     </head>
                     <body>
-             <nav class="w3-sidenav w3-blue w3-card-2 w3-overlay" style="display:none" id="mySidenav">
+             <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
               <a href="javascript:void(0)" 
               onclick="w3_close()"
               class="w3-closenav w3-large">Close &times;</a>
