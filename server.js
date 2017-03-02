@@ -80,6 +80,7 @@ function createTemplate (data) {
                       <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
                       <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
                     </nav>
+                    <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id='myOverlay'></div>
 
                 <div id="main">
                 
