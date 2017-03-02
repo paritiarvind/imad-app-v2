@@ -71,10 +71,10 @@ function createTemplate (data) {
                         
                     </head>
                     <body>
-             <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
-              
+             <nav class="w3-sidenav w3-blue w3-card-2 animate-opacity" style="display:none" id="mySidenav">
+              <a href="javascript:void(0)" 
               onclick="w3_close()"
-              class="w3-closenav w3-large">Close &times;
+              class="w3-closenav w3-large">Close &times;</a>
                       <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
                       <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
                       <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
