@@ -63,59 +63,54 @@ function createTemplate (data) {
     var heading = data.heading;
     var content = data.content;
     var htmlTemplate=`
-                    <html>
-                    <head>
-                     <div class="container" align="center">
-                        <title >
-                           ${title}
-                        </title>
-                        </div>
-                        <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
-                        
-                         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                         <link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
-                        
-                    </head>
-                    <body>
-             <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none;z-index:5" id="mySidenav">
-              <a href="javascript:void(0)" 
-              onclick="w3_close()"
-              class="w3-closenav w3-large">Close &times;</a>
-                      <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
-                      <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
-                      <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
-                      <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
-                    </nav>
-                    <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id='myOverlay'></div>
-
-                <div id="main">
-                
-                <header class="w3-container">
-                  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-                </header>
-                        <div class="container">
-                        <div>
-                            <a href="https://cloud.imad.hasura.io"></a>
-                                 </div>
-                                 <div class="container" align="center">
-                        <hr/>
-                        <h2>
-                            ${heading}
-                        </h2>
-                        <div>
-                            ${date}
-                        </div >
-                            </div>
-                              <div>
-                               ${content}
-                              </div>
-                              <script src="ui/main.js"></script>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                        </div>
-                        
-                    </body>
-                    </html>`
+<html>
+   <head>
+      <div class="container" align="center">
+         <title>${title}
+         </title>
+      </div>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
+   </head>
+   <body>
+      <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none;z-index:5" id="mySidenav">
+         <a href="javascript:void(0)" 
+            onclick="w3_close()"
+            class="w3-closenav w3-large">Close &times;</a>
+         <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
+         <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
+         <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
+         <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
+      </nav>
+      <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id='myOverlay'></div>
+      <div id="main">
+      <header class="w3-container">
+         <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+      </header>
+      <div class="container">
+         <div>
+            <a href="https://cloud.imad.hasura.io"></a>
+         </div>
+         <div class="container" align="center">
+            <hr/>
+            <h2>
+               ${heading}
+            </h2>
+            <div>
+               ${date}
+            </div >
+         </div>
+         <div>
+            ${content}
+         </div>
+         <script src="ui/main.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </div>
+   </body>
+</html>
+`
                     ;
         return htmlTemplate;
 }
