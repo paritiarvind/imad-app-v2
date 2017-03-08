@@ -50,7 +50,10 @@ var articles = {
                             </p>`
                          }
                          
-                 };       
+                 };   
+                Article3:{
+                   title:'Article4',
+                    content:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957.7689549823621!2d81.61469094662628!3d21.263205998738332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDE1JzQ3LjUiTiA4McKwMzYnNTUuMiJF!5e1!3m2!1sen!2sin!4v1488965064557" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>};  
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
