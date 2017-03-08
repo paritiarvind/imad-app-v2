@@ -134,6 +134,10 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/jquery.particleground.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery.particleground.js'));
 });
+app.get('/locateme.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'locateme.html'));
+});
+
 
 
  
