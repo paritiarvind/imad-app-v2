@@ -48,68 +48,68 @@ var articles = {
                              <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>`
-                         },
-                         Article4:{
-                   title:'Article4',
-                    heading:'MyLocation',
-                    // date:,
-                    content:` <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.2086729720613!2d81.61315631450941!3d21.263205985871817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddf776ff5587%3A0x0!2zMjHCsDE1JzQ3LjUiTiA4McKwMzYnNTUuMiJF!5e0!3m2!1sen!2sin!4v1488967213877" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                         },
-                };  
-                
+                         }
+                         
+                 };       
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
     var htmlTemplate=`
-<html>
-       <div class="container" align="center">
-         <title>${title}
-         </title>
-       </div>
-      <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
+                    <html>
+                    <head>
+                     <div class="container" align="center">
+                        <title >
+                           ${title}
+                        </title>
+                        </div>
+                        <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+                        
+                         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                         <link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
+                        
+                    </head>
+                    <body>
+             <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none;z-index:5" id="mySidenav">
+              <a href="javascript:void(0)" 
+              onclick="w3_close()"
+              class="w3-closenav w3-large">Close &times;</a>
+                      <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
+                      <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
+                      <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
+                      <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
+                    </nav>
+                    <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id='myOverlay'></div>
 
-   <body>
-      <nav class="w3-sidenav w3-blue w3-card-2 w3-animate-left" style="display:none;z-index:5" id="mySidenav">
-         <a href="javascript:void(0)" 
-            onclick="w3_close()"
-            class="w3-closenav w3-large">Close &times;</a>
-         <a class="w3-hover-green" href="http://paritiarvind.imad.hasura-app.io">Home</a> 
-         <a class="w3-hover-blue" href="http://paritiarvind.imad.hasura-app.io/Article1">Article 1</a> 
-         <a class="w3-hover-red" href="http://paritiarvind.imad.hasura-app.io/Article2">Article 2</a> 
-         <a class="w3-hover-yellow" href="http://paritiarvind.imad.hasura-app.io/Article3">Article 3</a> 
-      </nav>
-      <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id='myOverlay'></div>
-      <div id="main">
-      <header class="w3-container">
-         <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-      </header>
-      <div class="container">
-         <div>
-            <a href="https://cloud.imad.hasura.io"></a>
-         </div>
-         <div class="container" align="center">
-            <hr/>
-            <h2>
-               ${heading}
-            </h2>
-            <div>
-               ${date}
-            </div >
-         </div>
-         <div>
-            ${content}
-         </div>
-         <script src="ui/main.js"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      </div>
-   </body>
-</html>
-`
+                <div id="main">
+                
+                <header class="w3-container">
+                  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+                </header>
+                        <div class="container">
+                        <div>
+                            <a href="https://cloud.imad.hasura.io"></a>
+                                 </div>
+                                 <div class="container" align="center">
+                        <hr/>
+                        <h2>
+                            ${heading}
+                        </h2>
+                        <div>
+                            ${date}
+                        </div >
+                            </div>
+                              <div>
+                               ${content}
+                              </div>
+                              <script src="ui/main.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                        </div>
+                        
+                    </body>
+                    </html>`
                     ;
         return htmlTemplate;
 }
@@ -134,10 +134,6 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/jquery.particleground.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery.particleground.js'));
 });
-// app.get('/ui/locateme.html', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'ui', 'locateme.html'));
-// });
-
 
 
  
